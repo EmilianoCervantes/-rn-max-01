@@ -3,7 +3,7 @@ import { Text, View, StyleSheet, TouchableOpacity } from 'react-native';
 
 const GoalItem = ({ item, onDelete }) => {
   return (
-    <TouchableOpacity onPress={onDelete}>
+    <TouchableOpacity onPress={() => onDelete(item)}>
       <View style={estilos.goalList}>
         <Text>{item}</Text>
       </View>
